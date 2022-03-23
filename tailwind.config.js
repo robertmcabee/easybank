@@ -10,9 +10,6 @@ module.exports = {
       'offwhite': 'hsl(0, 0%, 98%)',
       'white': 'hsl(0, 0%, 100%)'
     },
-    fontFamily: {
-      sans: ['Public Sans', 'sans-serif'],
-    },
     extend: {},
   },
   plugins: [],
