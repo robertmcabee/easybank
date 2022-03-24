@@ -9,10 +9,13 @@
 </head>
 
 <body class="overflow-x-hidden">
-<!-- Header -->
+  <!-- Header -->
   <header class="w-full px-6 lg:px-24 flex justify-between h-20 items-center absolute top-0 z-50 bg-white">
     <img class="w-40" src="images/logo.svg" alt="Easybank">
-    <img class="lg:hidden" src="images/icon-hamburger.svg" alt="Easybank">
+    <div class="lg:hidden">
+      <img class="p-4 cursor-pointer show-modal" src="images/icon-hamburger.svg" alt="Easybank">
+      <img class="p-4 cursor-pointer hidden hide-modal" src="images/icon-close.svg" alt="Easybank">
+    </div>
     <nav class="text-gray text-md hidden lg:flex space-x-6 h-full">
       <a class="h-full hover:border-b-4 hover:border-b-green hover:text-blue transition-all flex" href="#"><span class="self-center">Home</span></a>
       <a class="h-full hover:border-b-4 hover:border-b-green hover:text-blue transition-all flex" href="#"><span class="self-center">About</span></a>
@@ -22,27 +25,36 @@
     </nav>
     <button class="w-44 h-12 hover:opacity-80 transition-opacity bg-gradient-to-r from-green to-cyan text-white font-bold rounded-full hidden lg:block">Request Invite</button>
   </header>
+  <!-- Modal -->
+  <div class="absolute hidden lg:hidden top-20 w-full h-full z-40 bg-gradient-to-b from-blue to-[rgba(0,0,0,0)] modal">
+    <section class="space-y-4 bg-white m-6 rounded-lg p-8 flex flex-col justify-center text-center sm:float-right sm:max-w-sm">
+      <a class="text-lg text-blue hover:text-green transition-colors" href="#"><span class="">Home</span></a>
+      <a class="text-lg text-blue hover:text-green transition-colors" href="#"><span class="">About</span></a>
+      <a class="text-lg text-blue hover:text-green transition-colors" href="#"><span class="">Contact</span></a>
+      <a class="text-lg text-blue hover:text-green transition-colors" href="#"><span class="">Blog</span></a>
+      <a class="text-lg text-blue hover:text-green transition-colors" href="#"><span class="">Careers</span></a>
+    </section>
+  </div>
   <!-- Hero -->
-  <section class="bg-offwhite w-full pl-24 py-52 text-center lg:text-left">
+  <section class="bg-offwhite w-full lg:pl-24 pt-52 pb-16 lg:pb-52 text-center lg:text-left">
     <div>
-      <!-- <img class="hidden lg:absolute top-[-100px] left-1/2 z-1" src="images/bg-intro-desktop.svg" alt=""> -->
-      <!-- <img class="lg:hidden absolute top-20 w-full z-1"  src="images/bg-intro-mobile.svg" alt=""> -->
-      <img class="absolute top-[-50px] left-0 px-4  lg:w-fit z-10 lg:p-0 lg:left-1/2 " src="images/image-mockups.png" alt="">
+      <img class="lg:absolute lg:block hidden top-[-100px] left-1/2 z-1" src="images/bg-intro-desktop.svg" alt="">
+      <img class="lg:hidden mt-[-200px] w-full z-1"  src="images/bg-intro-mobile.svg" alt="">
+      <img class="absolute top-[-50px] left-0 px-4 w-full lg:w-fit z-10 lg:p-0 lg:left-1/2 " src="images/image-mockups.png" alt="">
     </div>
-    <div class="pt-96 lg:pt-0 lg:w-5/12 flex flex-col space-y-8">
+    <div class="pt-0 lg:w-5/12 lg:max-w-md flex flex-col space-y-8 px-8">
       <h1 class="text-5xl lg:w-96 font-light text-blue">Next generation digital banking</h1>
       <p class="text-gray">
         Take your financial life online. Your Easybank account will be a one-stop-shop
         for spending, saving, budgeting, investing, and much more.
       </p>
-      <button class="w-44 h-12 place-self-center hover:opacity-80 transition-opacity bg-gradient-to-r from-green to-cyan text-white font-bold rounded-full">Request Invite</button>
+      <button class="w-44 h-12 place-self-center lg:place-self-start hover:opacity-80 transition-opacity bg-gradient-to-r from-green to-cyan text-white font-bold rounded-full">Request Invite</button>
     </div>
-      
   </section>
 <!-- Features -->
-  <section class="bg-lightgray w-full px-6 lg:px-24 py-32 z-2 relative text-center lg:text-left">
+  <section class="bg-lightgray w-full px-10 lg:px-24 py-16 lg:py-32 z-2 relative text-center lg:text-left">
     <h2 class="text-4xl font-light text-blue my-8">Why choose Easybank?</h2>
-    <p class="lg:w-3/5 text-gray">We leverage Open Banking to turn your bank account into your financial hub. <br class="hidden lg:block"/> Control your finances like never before.</p>
+    <p class=" text-gray">We leverage Open Banking to turn your bank account into your financial hub. <br class="hidden lg:block"/> Control your finances like never before.</p>
     <section class="grid mt-12 gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
       <div class="flex flex-col space-y-6">
         <img src="images/icon-online.svg" class="w-20 self-center lg:self-start" alt="" srcset="">
@@ -79,10 +91,10 @@
     </section>
   </section>
   <!-- Articles -->
-<section class="w-full bg-offwhite lg:px-24 py-32">
+<section class="w-full bg-offwhite lg:px-24 py-16 lg:py-32">
   <h2 class="text-4xl font-light text-blue my-8 text-center lg:text-left">Latest Articles</h2>
 
-  <div class="grid gap-6 px-6 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-between justify-items-center pt-6">
+  <div class="grid gap-6 lg:px-0 px-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-4 justify-between justify-items-center pt-6">
     <article class="w-full max-w-md pb-6 rounded-xl bg-white">
       <img class="rounded-t-xl w-full max-h-40 object-cover" src="images/image-currency.jpg" alt="">
       <div class="px-6 mt-8 flex flex-col space-y-4">
@@ -134,11 +146,11 @@
 
 </section>
 <!-- Footer -->
-<footer class="w-full py-10 lg:px-24 gap-y-6 gap-x-10 text-white bg-blue grid grid-cols-1 lg:grid-cols-3 justify-center lg:justify-start">
+<footer class="w-full py-10 lg:px-24 gap-y-4 gap-x-10 text-white bg-blue grid grid-cols-1 lg:grid-cols-3 justify-center lg:justify-start">
 
-  <div class="lg:h-32 lg:w-fit flex flex-col">
+  <div class="lg:h-28 lg:w-fit flex flex-col pt-2">
     <img class="w-40 self-center" src="images/logo-alt.svg" alt="Easybank">
-    <div class="flex self-center space-x-3 lg:mt-8">
+    <div class="flex self-center space-x-3 mt-4 lg:mt-8">
       <a class="hover:text-green transition-colors" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="currentColor" d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z"/></svg>
       </a>
@@ -157,22 +169,23 @@
     </div>
   </div>
 
-  <div class="lg:h-32 grid grid-cols-1 lg:grid-cols-2 gap-x-12 justify-evenly text-center gap-y-3">
-    <p class="hover:text-green transition-color"><a href="#">About Us</a></p>
-    <p class="hover:text-green transition-color"><a href="#">Contact</a></p>
-    <p class="hover:text-green transition-color"><a href="#">Blog</a></p>
-    <p class="hover:text-green transition-color"><a href="#">Careers</a></p>
-    <p class="hover:text-green transition-color"><a href="#">Support</a></p>
-    <p class="hover:text-green transition-color"><a href="#">Privacy Policy</a></p>
+  <div class="lg:h-28 lg:ml-[-230px] w-full lg:w-72 grid grid-cols-1 lg:grid-cols-2 gap-x-12 text-center lg:text-left gap-y-3">
+    <p class="hover:text-green transition-colors"><a href="#">About Us</a></p>
+    <p class="hover:text-green transition-colors"><a href="#">Contact</a></p>
+    <p class="hover:text-green transition-colors"><a href="#">Blog</a></p>
+    <p class="hover:text-green transition-colors"><a href="#">Careers</a></p>
+    <p class="hover:text-green transition-colors"><a href="#">Support</a></p>
+    <p class="hover:text-green transition-colors"><a href="#">Privacy Policy</a></p>
   </div>
   
-  <div class="lg:h-32 flex flex-col lg:justify-self-end">
+  <div class="lg:h-28 flex flex-col lg:justify-self-end space-y-1 text-center">
     <button class="self-center w-44 h-12 hover:opacity-80 transition-opacity bg-gradient-to-r from-green to-cyan text-white font-bold rounded-full">Request Invite</button>
     <p class="text-gray text-xs">© Easybank. All Rights Reserved</p>
-    <p class="text-gray text-xs">Layout by Frontend Mentor</p>
-    <p class="text-gray text-xs">Code by Robert McAbee</p>
+    <p class="text-gray text-xs opacity-50">Layout by Frontend Mentor</p>
+    <p class="text-gray text-xs opacity-50">Code by Robert McAbee</p>
   </div>
 
 </footer>
+<script src="app.js"></script>
 </body>
 </html>
