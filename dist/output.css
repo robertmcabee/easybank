@@ -809,6 +809,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: hsl(233 26% 24% / var(--tw-bg-opacity));
 }
 
+.bg-gray{
+  --tw-bg-opacity: 1;
+  background-color: hsl(233 8% 62% / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1094,8 +1099,32 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .lg\:content-start{
+    align-content: flex-start;
+  }
+
+  .lg\:content-end{
+    align-content: flex-end;
+  }
+
   .lg\:justify-start{
     justify-content: flex-start;
+  }
+
+  .lg\:justify-around{
+    justify-content: space-around;
+  }
+
+  .lg\:justify-evenly{
+    justify-content: space-evenly;
+  }
+
+  .lg\:justify-items-start{
+    justify-items: start;
+  }
+
+  .lg\:justify-items-center{
+    justify-items: center;
   }
 
   .lg\:place-self-start{
@@ -1108,6 +1137,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:justify-self-end{
     justify-self: end;
+  }
+
+  .lg\:justify-self-center{
+    justify-self: center;
   }
 
   .lg\:p-0{
