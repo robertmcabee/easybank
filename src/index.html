@@ -26,7 +26,7 @@
     <button class="w-44 h-12 hover:opacity-80 transition-opacity bg-gradient-to-r from-green to-cyan text-white font-bold rounded-full hidden lg:block">Request Invite</button>
   </header>
   <!-- Modal -->
-  <div class="absolute hidden lg:hidden top-20 w-full h-full z-40 bg-gradient-to-b from-blue to-[rgba(0,0,0,0)] modal">
+  <div class="absolute hidden lg:hidden top-20 w-full h-full z-40 bg-gradient-to-b from-blue to-[rgba(0,0,0,0)] modal animate-drop">
     <section class="space-y-4 bg-white m-6 rounded-lg p-8 flex flex-col justify-center text-center sm:float-right sm:max-w-sm">
       <a class="text-lg text-blue hover:text-green transition-colors" href="#"><span class="">Home</span></a>
       <a class="text-lg text-blue hover:text-green transition-colors" href="#"><span class="">About</span></a>
@@ -40,9 +40,9 @@
     <div>
       <img class="lg:absolute lg:block hidden top-[-100px] left-1/2 z-1" src="images/bg-intro-desktop.svg" alt="">
       <img class="lg:hidden mt-[-200px] w-full z-1"  src="images/bg-intro-mobile.svg" alt="">
-      <img class="absolute top-[-50px] left-0 px-4 w-full lg:w-fit z-10 lg:p-0 lg:left-1/2 " src="images/image-mockups.png" alt="">
+      <img class="absolute top-[-50px] left-0 px-4 w-full lg:w-fit z-10 lg:p-0 lg:left-1/2 animate-lower" src="images/image-mockups.png" alt="">
     </div>
-    <div class="pt-0 lg:w-5/12 lg:max-w-md flex flex-col space-y-8 px-8">
+    <div class="pt-0 lg:w-5/12 lg:max-w-md flex flex-col space-y-8 px-8 animate-fadein">
       <h1 class="text-5xl lg:w-96 font-light text-blue">Next generation digital banking</h1>
       <p class="text-gray">
         Take your financial life online. Your Easybank account will be a one-stop-shop
@@ -53,9 +53,9 @@
   </section>
 <!-- Features -->
   <section class="bg-lightgray w-full px-10 lg:px-24 py-16 lg:py-32 z-2 relative text-center lg:text-left">
-    <h2 class="text-4xl font-light text-blue my-8">Why choose Easybank?</h2>
-    <p class=" text-gray">We leverage Open Banking to turn your bank account into your financial hub. <br class="hidden lg:block"/> Control your finances like never before.</p>
-    <section class="grid mt-12 gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+    <h2 class="text-4xl font-light text-blue my-8 animate-fadein">Why choose Easybank?</h2>
+    <p class=" text-gray animate-fadein">We leverage Open Banking to turn your bank account into your financial hub. <br class="hidden lg:block"/> Control your finances like never before.</p>
+    <section class="grid mt-12 gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 animate-fadein">
       <div class="flex flex-col space-y-6">
         <img src="images/icon-online.svg" class="w-20 self-center lg:self-start" alt="" srcset="">
         <h3 class="text-2xl text-blue">Online Banking</h3>
