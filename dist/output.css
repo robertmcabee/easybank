@@ -983,6 +983,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
+.modal{
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .hover\:border-b-4:hover{
   border-bottom-width: 4px;
 }
